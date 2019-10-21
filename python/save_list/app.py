@@ -40,10 +40,10 @@ def save_to_file(file_name, text_list):
 
 def save_question(text_list):
     choice = question_choice("Would you like to save the list to a file (y/n) ", ("y", "n"))
-    bestandnaam = input("Enter the name of the file, example, list.txt: ")
+    file_name = input("Enter the name of the file, example, list.txt: ")
     if(choice is "n"):
         exit()
-    save_to_file(bestandnaam, text_list)
+    save_to_file(file_name, text_list)
 
 def wordprocessor_app():
     intro()
